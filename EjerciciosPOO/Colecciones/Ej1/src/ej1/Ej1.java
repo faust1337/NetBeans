@@ -1,3 +1,7 @@
+/*Diseñar un programa que lea y guarde razas de perros en un ArrayList de tipo String. El
+programa pedirá una raza de perro en un bucle, el mismo se guardará en la lista y
+después se le preguntará al usuario si quiere guardar otro perro o si quiere salir. Si decide
+salir, se mostrará todos los perros guardados en el ArrayList.*/
 package ej1;
 import java.util.*;
 public class Ej1 {
@@ -19,6 +23,9 @@ public class Ej1 {
                 opc = leer.next().charAt(0);
             }
         }while (opc!='n' && opc!='N');
-        razas.forEach((r) -> {System.out.println("Raza: " + r);});
-    }    
+        //razas.forEach((r) -> {System.out.println("Raza: " + r);});
+        for(String r : razas){
+            System.out.println(r);
+        }
+    }
 }
