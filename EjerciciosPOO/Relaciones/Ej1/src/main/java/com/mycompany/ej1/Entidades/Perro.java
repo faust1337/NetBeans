@@ -1,8 +1,8 @@
-package ej1.Entidades;
+package com.mycompany.ej1.Entidades;
 
 public class Perro {
-    String nombre, raza, tamaño;
-    Integer edad;
+    private String nombre, raza, tamaño;
+    private Integer edad;
     
     public Perro(String nombre, String raza, String tamaño, Integer edad) {
         this.nombre = nombre;
@@ -45,6 +45,4 @@ public class Perro {
     public void setEdad(Integer edad) {
         this.edad = edad;
     }
-
-    
 }

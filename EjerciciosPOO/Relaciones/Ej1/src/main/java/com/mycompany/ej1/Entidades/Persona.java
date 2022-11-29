@@ -1,9 +1,9 @@
-package ej1.Entidades;
+package com.mycompany.ej1.Entidades;
 
 public class Persona {
-    String nombre, apellido;
-    Integer edad, documento;
-    Perro perro;
+    private String nombre, apellido;
+    private Integer edad, documento;
+    private Perro perro;
 
     public Persona() {
     }

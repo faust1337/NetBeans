@@ -1,6 +1,8 @@
-package ej1;
-import java.util.*;
-import ej1.Entidades.*;
+package com.mycompany.ej1;
+
+import com.mycompany.ej1.Entidades.Perro;
+import com.mycompany.ej1.Entidades.Persona;
+
 public class Ej1 {
 
     public static void main(String[] args) {
