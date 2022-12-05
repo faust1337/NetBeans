@@ -31,11 +31,10 @@ public class Juego {
             j.disparo(r);
             if(aux==jugadores.size()-1){
                 aux = 0;
-                r.siguienteChorro();
             }else {
-                r.siguienteChorro();
                 aux++;
             }
+            r.siguienteChorro();
         }while(j.mojado==false);
         System.out.println("Jugador mojado: " + j.getNombre());
     }
