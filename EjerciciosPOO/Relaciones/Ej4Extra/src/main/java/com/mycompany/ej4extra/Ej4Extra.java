@@ -8,10 +8,7 @@ public class Ej4Extra {
         ArrayList<String> nombres = s.generarNombres();
         ArrayList<Integer> dnis = s.generarDocumentos(nombres);
         ArrayList<Alumno> alumnos = s.generarAlumnos(nombres, dnis);
-        //s.mostrarAlumnos(alumnos);
         s.votacion(alumnos);
-        //s.ranking(alumnos);
-        s.easterEgg(alumnos);
-        //s.mostrarVotos(alumnos);
+        s.ranking(alumnos);
     }
 }
