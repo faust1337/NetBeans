@@ -19,6 +19,11 @@ public class Ej2 {
         ArrayList<Jugador> jugadores = new ArrayList();
         System.out.print("Cantidad de jugadores: ");
         int n = leer.nextInt();
+        while(n>6 || n<1){
+            System.out.println("Cantidad inválida. Deben ser hasta 6 jugadores.");
+            System.out.print("Cantidad de jugadores: ");
+            n = leer.nextInt();
+        }
         for (int i = 0; i < n; i++) {
             Jugador j = new Jugador();
             System.out.print("Nombre: ");

@@ -13,29 +13,19 @@ public class Juego {
     }
     public void ronda(){
         r.llenarRevolver();
-        /*for(Jugador j : jugadores){ //Para un numero fijo de 6 jugadores
-            j.disparo(r);
-            if(j.mojado==true) {
-                System.out.println("Jugador mojado: " + j.getNombre());
-                break;
-            }
-            else{
-                r.siguienteChorro();
-            }
-        }*/
-        int aux = 0;
-        Jugador j = new Jugador();
+        int contadorJugadores = 0;
+        Jugador aux;
         System.out.println(r.toString());
         do{
-            j = jugadores.get(aux);
-            j.disparo(r);
-            if(aux==jugadores.size()-1){
-                aux = 0;
+            aux = jugadores.get(contadorJugadores);
+            aux.disparo(r);
+            if(contadorJugadores==jugadores.size()-1){
+                contadorJugadores = 0;
             }else {
-                aux++;
+                contadorJugadores++;
             }
             r.siguienteChorro();
-        }while(j.mojado==false);
-        System.out.println("Jugador mojado: " + j.getNombre());
+        }while(aux.mojado==false);
+        System.out.println("Jugador mojado: " + aux.getNombre());
     }
 }

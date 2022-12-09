@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="main.java.com.mycompany.ej3extra.Entidades">
+  <ClassDiagramComponents>
+    <Class name="Cliente" package="com.mycompany.ej3extra.Entidades" visibility="public" xPosition="639.0" yPosition="486.0">
+      <Fields>
+        <Field name="nombre" type="String" visibility="private"/>
+        <Field name="documento" type="Integer" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Cuota" package="com.mycompany.ej3extra.Entidades" visibility="public" xPosition="265.0" yPosition="49.0">
+      <Fields>
+        <Field name="numCuota" type="Integer" visibility="private"/>
+        <Field name="formaDePago" type="String" visibility="private"/>
+        <Field name="estaPagada" type="boolean" visibility="private"/>
+        <Field name="fechaVto" type="Date" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Poliza" package="com.mycompany.ej3extra.Entidades" visibility="public" xPosition="620.0" yPosition="20.0">
+      <Fields>
+        <Field name="vehiculos" type="ArrayList&lt;Vehiculo&gt;" visibility="private"/>
+        <Field name="cuota" type="Cuota" visibility="private"/>
+        <Field name="cliente" type="Cliente" visibility="private"/>
+        <Field name="formaPago" type="String" visibility="private"/>
+        <Field name="numPoliza" type="Integer" visibility="private"/>
+        <Field name="fechaInicioPoliza" type="Date" visibility="private"/>
+        <Field name="granizo" type="boolean" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Vehiculo" package="com.mycompany.ej3extra.Entidades" visibility="public" xPosition="971.0" yPosition="68.0">
+      <Fields>
+        <Field name="marca" type="String" visibility="private"/>
+        <Field name="anio" type="Integer" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <HasRelation name="cliente" source="com.mycompany.ej3extra.Entidades.Poliza" target="com.mycompany.ej3extra.Entidades.Cliente" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="vehiculos" source="com.mycompany.ej3extra.Entidades.Poliza" target="com.mycompany.ej3extra.Entidades.Vehiculo" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;Vehiculo&gt;"/>
+    <HasRelation name="cuota" source="com.mycompany.ej3extra.Entidades.Poliza" target="com.mycompany.ej3extra.Entidades.Cuota" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

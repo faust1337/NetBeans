@@ -8,7 +8,6 @@ public class Voto {
 
     public Voto() {
     }
-
     public Voto(Alumno votante, ArrayList<Alumno> votosDados) {
         this.votante = votante;
         this.votosDados = votosDados;
@@ -17,15 +16,12 @@ public class Voto {
     public Alumno getVotante() {
         return votante;
     }
-
     public void setVotante(Alumno votante) {
         this.votante = votante;
     }
-
     public ArrayList<Alumno> getVotosDados() {
         return votosDados;
     }
-
     public void setVotosDados(ArrayList<Alumno> votosDados) {
         this.votosDados = votosDados;
     }

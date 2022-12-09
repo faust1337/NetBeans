@@ -16,7 +16,7 @@ public class Simulador {
     
     public String generarNombreRandom(){
         String[] nombresNotSoRandom = new String[]{"Fausto","Leandro","Agustina","Juan Pablo","Cristiano","Lisardo","Lionel","Rodrigo","Shakira","Brenda","Florencia","Francisco","Matías","Martín","Priscila","Lucía","Paula","Alejandra","Alejandro","Pedro","Gerónimo","Facundo","Agustín","Valentín","Benjamín","Rodrigo","Lautaro"};
-        String[] apellidoNotSoRandom = new String[]{"Rodriguez","Raimundo","Perez","Alvarez","Messi","Ronaldo","Pezzi","Saint Claire","Dominguez","Romero","Zalazar","Buonanotte","Pilipiak","Douat","Prado","Lopez","Lucero","Barbera","Sánchez","Perez","Reynoso","Baccarelli"};
+        String[] apellidoNotSoRandom = new String[]{"Rodriguez","Raimundo","Perez","Alvarez","Messi","Ronaldo","Pezzi","Saint Claire","Dominguez","Romero","Zalazar","Buonanotte","Pilipiak","Douat","Prado","Lopez","Lucero","Barbera","Sánchez","Perez","Reynoso","Baccarelli","Cantore"};
         int r1 = (int)(Math.random()*nombresNotSoRandom.length);
         int r2 = (int)(Math.random()*apellidoNotSoRandom.length);
         String nombreRandom = nombresNotSoRandom[r1] + " " + apellidoNotSoRandom[r2];
@@ -26,7 +26,7 @@ public class Simulador {
     public ArrayList<String> generarNombres(){//Funciona
         ArrayList<String> nombres = new ArrayList();
         System.out.print("Cantidad de alumnos: ");
-        int n = 40/*leer.nextInt()*/;
+        int n = leer.nextInt();
         while(n<10){System.out.println("Número inválido, deben ser más de 10.\nReingrese: "); n=leer.nextInt();}
         String aux = "";
         for (int i = 0; i < n; i++) {
@@ -156,6 +156,7 @@ public class Simulador {
 
 
 
+    
     
     
     
