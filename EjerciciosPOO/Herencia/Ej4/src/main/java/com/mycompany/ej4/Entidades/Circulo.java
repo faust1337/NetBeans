@@ -23,11 +23,11 @@ public class Circulo implements AccionForma{
     
     @Override
     public double area() {
-        return Math.PI*(Math.pow(radio,2));
+        return pi*(Math.pow(radio,2));
     }
 
     @Override
     public double perimetro() {
-        return Math.PI*radio*2;
+        return pi*radio*2;
     }
 }
